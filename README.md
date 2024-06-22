@@ -33,7 +33,7 @@ This project is a web application developed using ASP .NET Core MVC and Entity F
 - **Expense Creation Page:** Management of expense operations.
 - **Add/Delete/Update Inventory Page:** Management of personnel inventory.
 
-### Personnel
+### Personel
 
 - **Homepage:** Main control panel for personnel.
 - **Membership and Login Page:** Allows users to log in to the system.
