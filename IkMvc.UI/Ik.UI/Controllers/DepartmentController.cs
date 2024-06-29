@@ -13,7 +13,7 @@ namespace Ik.UI.Controllers
         public DepartmentController()
         {
             _httpClient = new HttpClient();
-            _httpClient.BaseAddress = new Uri("https://insankaynaklari.azurewebsites.net/");
+            _httpClient.BaseAddress = new Uri("https://localhost:7063/");
             _httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         }
 

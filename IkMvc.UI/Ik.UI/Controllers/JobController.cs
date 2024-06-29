@@ -13,8 +13,8 @@ namespace Ik.UI.Controllers
         public JobController()
         {
             _httpClient = new HttpClient();
-            _httpClient.BaseAddress = new Uri("https://insankaynaklari.azurewebsites.net/api/");
-          //  _httpClient.BaseAddress = new Uri("https://localhost:7063/api/");
+          //  _httpClient.BaseAddress = new Uri("https://insankaynaklari.azurewebsites.net/api/");
+            _httpClient.BaseAddress = new Uri("https://localhost:7063/api/");
             _httpClient.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
         }
         public async Task<IActionResult> Index()

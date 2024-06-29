@@ -69,7 +69,7 @@ namespace Ik_Bitirme.Application.Services.EmailServices
 
                 using var client = new SmtpClient();
                 await client.ConnectAsync("smtp.gmail.com", 587, SecureSocketOptions.StartTls); // SMTP sunucu bağlantısı
-                await client.AuthenticateAsync("kolayik469@gmail.com", "ityvbxelnkcgvryq"); // SMTP sunucu kimlik doğrulama bilgileri
+                await client.AuthenticateAsync("example469@gmail.com", "ityvbxelnkcgvryq"); // SMTP sunucu kimlik doğrulama bilgileri
                 await client.SendAsync(email); // E-postayı gönder
                 await client.DisconnectAsync(true);
             }

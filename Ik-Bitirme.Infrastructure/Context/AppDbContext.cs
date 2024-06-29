@@ -39,7 +39,7 @@ namespace Ik_Bitirme.Infrastructure.Context
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=ik-server.database.windows.net;Database=InsanKaynaklariYonetim;User Id=admin1;Password=Bilge123.");
+            optionsBuilder.UseSqlServer("Server=DESKTOP-JI3UVS4;Database=ikprojesi;Uid=sa;Pwd=123");
         }
            
         protected override void OnModelCreating(ModelBuilder builder)

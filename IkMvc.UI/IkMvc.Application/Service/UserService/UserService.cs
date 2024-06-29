@@ -23,10 +23,10 @@ namespace IkMvc.Application.Service.UserService
 {
     public class UserService : IUserService
     {
-        public readonly Uri baseAdress = new Uri("https://insankaynaklari.azurewebsites.net/");
+       // public readonly Uri baseAdress = new Uri("https://insankaynaklari.azurewebsites.net/");
 
 
-        //public Uri baseAdress = new Uri("https://localhost:7063/api/");
+        public Uri baseAdress = new Uri("https://localhost:7063/");
 
         public HttpClient client;
         private static UserService _instance;
@@ -238,7 +238,7 @@ namespace IkMvc.Application.Service.UserService
         public async Task Logout()
         {
             client.DefaultRequestHeaders.Authorization = null;
-            await client.GetAsync("https://insankaynaklari.azurewebsites.net/api/User/logout");
+            await client.GetAsync("https:/localhost:7063//api/User/logout");
         }
 
 

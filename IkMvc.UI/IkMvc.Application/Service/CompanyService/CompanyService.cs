@@ -26,7 +26,7 @@ namespace IkMvc.Application.Service.CompanyService
             {
                 // Token varsa, HTTP isteği için Authorization header'ına ekleyin
                 HttpClient client = new HttpClient();
-                client.BaseAddress = new Uri("https://insankaynaklari.azurewebsites.net/");
+                client.BaseAddress = new Uri("https://localhost:7063/");
                 client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", token);
 
                 HttpResponseMessage response = await client.GetAsync("api/Company/getAll");
